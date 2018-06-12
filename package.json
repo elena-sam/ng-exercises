@@ -11,7 +11,7 @@
     "lint:front": "ng lint",
     "lint:html": "htmllint src/**/*.html",
     "lint:autofix": "ng lint --fix && stylelint 'src/**/*{.css,.scss}' --fix",
-    "test:front": "ng test --watch=false",
+    "test:front": "ng test",
     "e2e": "ng e2e"
   },
   "private": true,
@@ -35,7 +35,7 @@
   "devDependencies": {
     "@angular/cli": "^1.7.4",
     "@angular/compiler-cli": "^5.2.10",
-    "@types/jasmine": "2.8.6",
+    "@types/jasmine": "^2.5.45",
     "@types/node": "~8.10.11",
     "codelyzer": "4.3.0",
     "htmllint-cli": "^0.0.7",
