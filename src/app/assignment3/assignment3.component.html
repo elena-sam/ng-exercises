@@ -1,0 +1,10 @@
+<button (click)="para = true" (click)="countClicks()">Display details</button>
+<p *ngIf="para">hello all! I am having such a wonderful day</p>
+<p>Clicks:</p>
+<ul *ngIf="para" >
+  <li *ngFor="let click of clicks" >
+    <span [ngClass]="{ white: click > 4 }" [ngStyle]="{ backgroundColor: click > 4 ? 'blue' : 'none' }">
+      <strong>{{ click }}</strong>
+    </span>
+  </li>
+</ul>
